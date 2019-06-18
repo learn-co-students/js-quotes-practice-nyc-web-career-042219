@@ -6,13 +6,9 @@ console.log("The DOM is loaded")
 
   let quotesArray = []
 
+  QUOTE_URL = "http://localhost:3000/quotes"
   URL = "http://localhost:3000/quotes?_embed=likes"
-
-  quoteList.addEventListener('click', event => {
-    if (event.target.className === "btn-danger"){
-      
-    }
-  })
+  LIKE_URL = "http://localhost:3000/likes"
 
   quoteList.addEventListener('click', event => {
     if(event.target.className === "btn-success") {
@@ -22,7 +18,7 @@ console.log("The DOM is loaded")
       actualNum++
       event.target.querySelector('span').innerText = actualNum
 
-      fetch(URL, {
+      fetch(LIKE_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,10 +27,20 @@ console.log("The DOM is loaded")
         body: JSON.stringify({
           likes: actualNum,
           quoteId: quoteId
+
         })
       }).then(rsp => rsp.json())
         .then(like => console.log(like))
         /// Not sure what to do here, but I know I need it needs to get to stay in the database
+        /// Turns out that I don't have to do jack-shit here
+    } else if (event.target.className === "btn-danger") {
+      let quoteId = parseInt(event.target.dataset.id)
+      let selectedCard = event.target.parentElement.parentElement
+      selectedCard.remove()
+
+      fetch(`${QUOTE_URL}/${quoteId}`, {
+        method: "DELETE"
+      })
     }
 
     // listen for the Clickin
@@ -84,7 +90,7 @@ console.log("The DOM is loaded")
           <p class="mb-0">${quote.quote}</p>
           <footer class="blockquote-footer">${quote.author}</footer>
           <br>
-          <button data-id="${quote.id}"class='btn-success'>Likes: <span>0</span></button>
+          <button data-id="${quote.id}"class='btn-success'>Likes: <span>${quote.likes.length}</span></button>
           <button data-id="${quote.id}"class='btn-danger'>Delete</button>
         </blockquote>
       </li>

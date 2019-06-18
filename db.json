@@ -1,19 +1,9 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "author": "Ann Richards"
-    },
-    {
       "id": 2,
       "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
       "author": "Collin Powell"
-    },
-    {
-      "id": 3,
-      "quote": "Don't count the days, make the days count.",
-      "author": "Mike Tyson"
     },
     {
       "id": 4,
@@ -201,58 +191,8 @@
     },
     {
       "likes": 1,
-      "quoteId": 1,
-      "id": 45
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 46
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 47
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 48
-    },
-    {
-      "likes": 2,
-      "quoteId": 1,
-      "id": 49
-    },
-    {
-      "likes": 3,
-      "quoteId": 1,
-      "id": 50
-    },
-    {
-      "likes": 4,
-      "quoteId": 1,
-      "id": 51
-    },
-    {
-      "likes": 5,
-      "quoteId": 1,
-      "id": 52
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 53
-    },
-    {
-      "likes": 1,
       "quoteId": 2,
       "id": 54
-    },
-    {
-      "likes": 1,
-      "quoteId": 3,
-      "id": 55
     },
     {
       "likes": 1,
@@ -261,65 +201,83 @@
     },
     {
       "likes": 1,
-      "quoteId": 1,
-      "id": 57
-    },
-    {
-      "likes": 2,
-      "quoteId": 1,
-      "id": 58
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 59
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 60
-    },
-    {
-      "likes": 2,
-      "quoteId": 1,
-      "id": 61
-    },
-    {
-      "likes": 3,
-      "quoteId": 1,
-      "id": 62
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 63
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 64
-    },
-    {
-      "likes": 1,
-      "quoteId": 1,
-      "id": 65
-    },
-    {
-      "likes": 1,
-      "quoteId": 65,
-      "id": 66
-    },
-    {
-      "likes": 1,
       "quoteId": 2,
       "id": 67
+    },
+    {
+      "quote": "Fuck THIS SHIT I can",
+      "author": "",
+      "id": 82
+    },
+    {
+      "quote": "Fuck THIS SHIT I cant",
+      "author": "FUCKKKKK",
+      "id": 83
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
+      "quoteId": 2,
+      "id": 19
+    },
+    {
+      "quoteId": 2,
+      "id": 22
+    },
+    {
+      "quoteId": 4,
+      "id": 24
+    },
+    {
+      "quoteId": 2,
+      "id": 26
+    },
+    {
+      "quoteId": 4,
+      "id": 28
+    },
+    {
+      "quoteId": 5,
+      "id": 29
+    },
+    {
+      "quoteId": 6,
+      "id": 30
+    },
+    {
+      "likes": 1,
+      "quoteId": 83,
+      "id": 34
+    },
+    {
+      "likes": 84,
+      "quoteId": 5,
+      "id": 37
+    },
+    {
+      "likes": 85,
+      "quoteId": 5,
+      "id": 38
+    },
+    {
+      "likes": null,
+      "quoteId": 2,
+      "id": 40
+    },
+    {
+      "likes": 5,
+      "quoteId": 2,
+      "id": 41
+    },
+    {
+      "likes": 6,
+      "quoteId": 2,
+      "id": 42
+    },
+    {
+      "likes": 7,
+      "quoteId": 2,
+      "id": 44
     }
   ]
 }
